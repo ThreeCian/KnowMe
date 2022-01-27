@@ -12,6 +12,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { KnowledgeComponent } from './components/knowledge/knowledge.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     ProfileComponent,
     NavbarComponent,
     KnowledgeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
