@@ -1,58 +1,82 @@
-<div class="section text-center py-4">
+<div class="section text-center py-4 animate__animated ">
     <h2 class="title text-success ">Conocimientos</h2>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-11 row  justify-content-around">
                 <div class="col-md-5">
                     <h4 class="text-info mb-2 text-left">Lenguajes</h4>
-                    <div class="row justify-content-around">
-                        <div class="col-xs-2">
-                            <img style="max-width:4rem" src="./assets/logos/javascript.png" alt="">
+                    <div class="row justify-content-md-around justify-content-between">
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:3.8rem" src="./assets/logos/javascript.png" alt="">
+                            <ngb-progressbar class="mt-1"  style="height:0.5rem" type="warning" [value]="70" [striped]="true" [animated]="true"></ngb-progressbar><br>
                         </div>
-                        <div class="col-xs-2">
+                        <div class="col-3 p-0 mx-2">
                             <img style="max-width:4rem" src="./assets/logos/typescript.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="primary" [value]="75" [striped]="true" [animated]="true"></ngb-progressbar><br>
                         </div>
-                        <div class="col-xs-2">
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:4rem" src="./assets/logos/html.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="danger" [value]="90" [striped]="true" [animated]="true"></ngb-progressbar><br>
+                        </div>
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:4rem" src="./assets/logos/css.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="info" [value]="80" [striped]="true" [animated]="true"></ngb-progressbar><br>
+                        </div>
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:4rem" src="./assets/logos/scss.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="danger" [value]="80" [striped]="true" [animated]="true"></ngb-progressbar><br>
+                        </div>
+                        <div class="col-3 p-0 mx-2">
                             <img style="max-width:4rem" src="./assets/logos/python.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="warning" [value]="30" [striped]="true" [animated]="true"></ngb-progressbar><br>
                         </div>
 
                     </div>
                 </div>
                 <div class="col-md-5">
                     <h4 class="text-info mb-2 text-left">Frameworks</h4>
-                    <div class="row justify-content-around">
-                        <div class="col-xs-2">
-                            <img style="max-width:4rem" src="./assets/logos/Angular.png" alt="">
+                    <div class="row justify-content-md-around justify-content-between">
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:4rem;" class="pt-2" src="./assets/logos/Angular.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="danger" [value]="90" [striped]="true" [animated]="true"></ngb-progressbar><br>
                         </div>
-                        <div class="col-xs-2">
-                            <img style="max-width:5rem" src="./assets/logos/node.png" alt="">
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:5rem;" src="./assets/logos/node.png" alt="">
+                            <ngb-progressbar class="mt-1"  style="height:0.5rem" type="success" [value]="50" [striped]="true" [animated]="true"></ngb-progressbar><br>
+                        </div>
+                        <div class="col-3 p-0 mx-2">
+                            <img style="max-width:5rem;" class="pt-2" src="./assets/logos/bootstrap.png" alt="">
+                            <ngb-progressbar class="mt-2"  style="height:0.5rem" type="info" [value]="100" [striped]="true" [animated]="true"></ngb-progressbar><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5">
                     <h4 class="text-info mb-2 text-left">Bases de datos</h4>
-                    <div class="row justify-content-around">
-                        <div class="col-xs-2">
+                    <div class="row justify-content-md-around  justify-content-sm-start">
+                        <div class="col-3 p-0 mx-2">
                             <img style="max-width:6rem; background-color: white;" src="./assets/logos/mongodb.png"
                                 alt="">
+                                <ngb-progressbar class="mt-2"  style="height:0.5rem" type="success" [value]="60" [striped]="true" [animated]="true"></ngb-progressbar><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5">
                     <h4 class="text-info mb-2 text-left">Herramientas</h4>
-                <div class="row justify-content-around">
-                    <div class="col-xs-2">
+                <div class="row justify-content-md-around  justify-content-between">
+                    <div class="col-3 p-0  mx-2">
                         <img style="max-width:4rem" src="./assets/logos/amplitude.png" alt="">
+                        <ngb-progressbar class="mt-2"  style="height:0.5rem" type="info" [value]="75" [striped]="true" [animated]="true"></ngb-progressbar><br>
                     </div>
 
-                    <!--  <div class="col-xs-2">
-                <img style="max-width:4rem" src="./assets/logos/bootstrap.png" alt="">
-            </div> -->
-                    <div class="col-xs-2">
+                    <!--   -->
+                    <div class="col-3 p-0  mx-2">
                         <img style="max-width:4rem" src="./assets/logos/Braze.png" alt="">
+                        <ngb-progressbar class="mt-2"  style="height:0.5rem" type="danger" [value]="60" [striped]="true" [animated]="true"></ngb-progressbar><br>
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-3 p-0  mx-2">
                         <img style="max-width:4rem" src="./assets/logos/gtm.png/" alt="">
+                        <ngb-progressbar class="mt-2"  style="height:0.5rem" type="primary" [value]="75" [striped]="true" [animated]="true"></ngb-progressbar><br>
+
                     </div>
                 </div>
                 </div>

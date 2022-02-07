@@ -1,122 +1,56 @@
 <div class="section section-dark text-center py-1">
+    
     <h2 class="title">Academia</h2>
     <div class="container">
         <h4 class="title text-left my-0">Estudios </h4>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/logos-academia/andap.png" alt="..."></a>
-                    </div>
-                    <div class="card-block">
+
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-container *ngFor="let slide of studies">
+                <ng-template carouselSlide [id]="slide.id">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="#"><img [src]="slide.image" alt="..."></a>
+                        </div>
+                        <div class="card-block">
                             <div class="author">
-                                <h5 class="text-info mt-2">Auxiliar en mantenimiento y sistemas de computo</h5>
-                                <h6 class="card-category">ANDAP (Alianza con MINTIC)</h6>
+                                <h5 class="text-info mt-2">{{slide.title}}</h5>
+                                <h6 class="card-category">{{slide.description}}</h6>
                                 <p class="card-description text-center">
-                                   Año 2018 - Alianza MINTIC
-                                    </p>
+                                    {{slide.subdescription}}
+                                </p>
                             </div>
-                    </div>
-                    
-                </div>
-            </div>
+                        </div>
 
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/logos-academia/udistrital.png" alt="..."></a>
                     </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h5 class="text-info mt-2">Tecnólogía en electrónica</h5>
-                                <h6 class="card-category">Universidad Distrital Francisco José de caldas</h6>
-                            </div>
-                        </a>
-                        <p class="card-description text-center">
-                      Año 2020 
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/logos-academia/udistrital.png" alt="..."></a>
-                    </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h5 class="text-info mt-2">Ingeniería en telecomunicaciones</h5>
-                                <h6 class="card-category">Universidad Distrital Francisco José de caldas</h6>
-                            </div>
-                        </a>
-                        <p class="card-description text-center">
-                       En proceso...
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
         <h4 class="title text-left my-0">Certificaciones </h4>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/logos-academia/bictia.png" alt="..."></a>
-                    </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h5 class="text-info mt-2">Fundamentos de programación y creación de páginas web</h5>
-                                <h6 class="card-category">Bictia</h6>
-                            </div>
-                        </a>
-                        <p class="card-description text-center">
-                            Año 2020
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <owl-carousel-o [options]="customOptions">
 
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/logos-academia/bictia.png" alt="..."></a>
-                    </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h5 class="text-info mt-2">Desarrollo web Full Stack</h5>
-                                <h6 class="card-category">Bictia</h6>
+                <ng-container *ngFor="let slide of certifications">
+                    <ng-template carouselSlide [id]="slide.id">
+                        <div class="card card-profile card-plain py-1">
+                            <div class="card-avatar">
+                                <a href="#"><img [src]="slide.image" alt="..."></a>
                             </div>
-                        </a>
-                        <p class="card-description text-center">
-                            Año 2020
-                        </p>
-                    </div>
-                </div>
-            </div>
+                            <div class="card-block">
+                                <div class="author">
+                                    <h5 class="text-info mt-2">{{slide.title}}</h5>
+                                    <h6 class="card-category">{{slide.description}}</h6>
+                                    <p class="card-description text-center">
+                                        {{slide.subdescription}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ng-container>
 
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img style="background-color: white;" src="./assets/logos-academia/udemy-logo-letra.jpg.webp" alt="..."></a>
-                    </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h5 class="text-info mt-2">Angular: De cero a experto</h5>
-                                <h6 class="card-category">Udemy</h6>
-                            </div>
-                        </a>
-                        <p class="card-description text-center">
-                            Año 2021
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </owl-carousel-o>
+
         </div>
 
     </div>

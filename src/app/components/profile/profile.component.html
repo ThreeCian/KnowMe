@@ -1,24 +1,24 @@
 <div class="wrapper">
-    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/images/porta3.jpg');">
-        <div class="filter"></div>
-    </div>
+    <ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)"class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/images/porta.jpg');"> <div class="filter"></div></ng-particles>
+   
     <div class="section profile-content">
         <div class="container px-0" style="box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
         border-radius: 15px;">
             <div class="owner" >
                 <div class="avatar">
-                    <img src="./assets/images/profile1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                    <img src="./assets/images/profile1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive  animate__animated animate__fadeIn animate__delay-1s">
                 </div>
-                <div class="name animate__fadeIn">
+                <div class="name animate__animated animate__fadeIn animate__delay-2s">
                     <h3 class="title">Catherine Estrada Ruiz<br /></h3>
-                    <h6 class="description">Desarrolladora Web</h6>
+                    <h6 class="description">Desarrolladora Frontend Jr.</h6>
                 </div>
             </div>
-            <div class="row animate__fadeIn">
-                <div class="col-md-10 ml-auto mr-auto text-center blockquote">
-                    <p>Tecnóloga en electrónica y actualmente estudiante en telecomunicaciones. Con conocimientos en desarrollo web y aún aprendiendo en el proceso.
+            <div class="row animate__animated animate__fadeIn animate__delay-2s">
+                <div class="col-10 ml-auto mr-auto text-center blockquote ">
+                    <p >¡Hola! soy Tecnóloga en electrónica y actualmente estudiante de ingeniería en telecomunicaciones, con conocimientos en desarrollo frontend web. Actualmente sigo aprendiendo y ando disfrutando el proceso.
                     <br>
-                        Soy una persona activa, responsable, con habilidades para trabajar en equipo, con ideas fundamentales en el desarrollo integral, apasionada por conocer lugares y experiencias nuevas.</p>
+                    <br>
+                     Soy una persona activa, responsable, dinámica, con habilidades para trabajar en equipo, con ideas fundamentales en el desarrollo integral, apasionada por conocer lugares y experiencias nuevas.</p>
                     
                 </div>
                 <br>
