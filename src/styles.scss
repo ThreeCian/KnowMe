@@ -6,6 +6,7 @@
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 @import 'animate.css';
 
-body{
+html,body{
+    max-width: 100%;
     overflow-x: hidden;
 }
